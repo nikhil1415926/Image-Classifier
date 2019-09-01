@@ -15,7 +15,7 @@ PRE TRAINED: MobileNet Model
 WebCAM to Capture Image frames
 
 
-In PROGRESS: ANGULAR 8/Flutter UI with Material Design 
+In PROGRESS: ANGULAR 8/Flutter for UI with Material Design 
 
 
 
