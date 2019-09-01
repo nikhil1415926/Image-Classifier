@@ -4,14 +4,55 @@
     <script src="https://unpkg.com/@tensorflow/tfjs"></script>
     <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
     <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
+    <style>
+      .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      	margin-left:47%; 
+      }
+      
+      .center { width: 70%; /*or whatever % you prefer*/
+        margin: 0 auto;
+        display: block; }
+  
+      .class-a {background-color: #008CBA;} /* Blue */
+      .class-b {background-color: #f44336;} /* Red */ 
+      .class-c {background-color: #e7e7e7; color: black;} /* Gray */ 
+      
+      #wrapper {
+   }
+#first {
+    width: 300px;
+    float:left; /* add this */
+    border: 1px solid red;
+}
+#second {
+    border: 1px solid green;
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+}
+
+      </style>
   </head>
   <body>
-    <div id="console"></div>
+  
     <!-- Add an image that we will use to test -->
-    <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
-        <button id="class-a">Add A</button>
-        <button id="class-b">Add B</button>
-        <button id="class-c">Add C</button>
+    <video  class = "center" autoplay playsinline muted id="webcam" width="320" height="300"></video>
+  <div id="wrapper" class="center">
+    <div id="center">
+    <button id="class-a" class="button class-a">Add A</button>
+    <button id="class-b" class="button class-b">Add B</button>
+    <button id="class-c" class="button class-c">Add C</button>
+    </div> 
+    <div class = "center" id="console"></div>
+  </div>
     <!-- Load index.js after the content of the page -->
     <script src="index.js"></script>
   </body>
